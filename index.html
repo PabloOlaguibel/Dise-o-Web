@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>EcoVida — Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EcoVida: consejos y recursos para una vida sostenible.">
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo" aria-label="EcoVida">
+      <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#C8E6C9" d="M12 2c6.6 0 10 3.4 10 10-6.6 0-10-3.4-10-10z"/>
+        <path fill="#81C784" d="M2 12C2 5.4 5.4 2 12 2c0 6.6-3.4 10-10 10z"/>
+        <path fill="#2E7D32" d="M12 2c-1 8 2 13 9 17-6 0-10-3-13-8-2-3-3-6-4-9 2 0 4 0 8 0z"/>
+      </svg>
+      <span>EcoVida</span>
+    </div>
+    <nav aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="consejos.html">Consejos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="grid-2">
+    <div class="card">
+      <h1>🌿 Protejamos el planeta juntos</h1>
+      <p>Nuestro compromiso es impulsar hábitos sostenibles con recursos claros y prácticos.</p>
+      <a class="btn" href="consejos.html">Ver consejos</a>
+    </div>
+
+    <figure class="hero-picture">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="img/bosque-1600.jpg">
+        <source media="(min-width: 600px)" srcset="img/bosque-960.jpg">
+        <img src="img/bosque-480.jpg" alt="Bosque verde con lago">
+      </picture>
+      <figcaption class="caption">Un futuro sostenible comienza hoy.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card" aria-labelledby="mapa-titulo">
+    <h2 id="mapa-titulo">Zonas ecológicas del mundo</h2>
+    <p>Haz clic en las regiones para conocer más.</p>
+    <figure>
+      <img src="img/mapa.jpg" alt="Mapa del mundo ilustrado con fauna" usemap="#mapa-eco" width="600" height="600" style="max-width:100%;height:auto">
+      <map name="mapa-eco">
+        <area shape="rect" coords="40,120,260,420" href="consejos.html#bosques" alt="Américas" title="Américas">
+        <area shape="rect" coords="260,110,400,420" href="consejos.html#mares" alt="Europa y África" title="Europa y África">
+        <area shape="rect" coords="400,110,580,430" href="consejos.html#desiertos" alt="Asia y Oceanía" title="Asia y Oceanía">
+      </map>
+      <figcaption class="caption">Mapa interactivo con áreas clicables.</figcaption>
+    </figure>
+  </section>
+
+  <section class="card" aria-labelledby="svg-titulo">
+    <h2 id="svg-titulo">Animación SVG</h2>
+    <p>Un ícono de hoja con animación suave, implementada solo con CSS.</p>
+    <img src="svg/hoja.svg" width="72" height="72" alt="Hoja animada" class="leaf" />
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <small>© 2025 EcoVida · Todos los derechos reservados</small>
+    <a href="contacto.html">Escríbenos</a>
+  </div>
+</footer>
+</body>
+</html>

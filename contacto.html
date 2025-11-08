@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>EcoVida — Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contáctanos para compartir ideas sostenibles.">
+  <link rel="icon" href="img/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <div class="logo" aria-label="EcoVida">
+      <svg class="leaf" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="#C8E6C9" d="M12 2c6.6 0 10 3.4 10 10-6.6 0-10-3.4-10-10z"/>
+        <path fill="#81C784" d="M2 12C2 5.4 5.4 2 12 2c0 6.6-3.4 10-10 10z"/>
+        <path fill="#2E7D32" d="M12 2c-1 8 2 13 9 17-6 0-10-3-13-8-2-3-3-6-4-9 2 0 4 0 8 0z"/>
+      </svg>
+      <span>EcoVida</span>
+    </div>
+    <nav aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="consejos.html">Consejos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="card">
+    <h1>Contáctanos</h1>
+    <p>Gracias por tu compromiso con la sostenibilidad 🌍</p>
+
+    <form class="form" action="#" method="post" aria-describedby="ayuda-form">
+      <div>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+      </div>
+      <div>
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div>
+        <label for="pais">País</label>
+        <select id="pais" name="pais" required>
+          <option value="">Selecciona tu país</option>
+          <option>Perú</option>
+          <option>Chile</option>
+          <option>México</option>
+        </select>
+      </div>
+      <div>
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo">
+          <option>Consulta</option>
+          <option>Sugerencia</option>
+          <option>Reporte</option>
+        </select>
+      </div>
+      <div>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+      <p id="ayuda-form" class="caption">Tus datos serán usados solo para responder tu comunicación.</p>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <small>© 2025 EcoVida</small>
+    <a href="index.html">Inicio</a>
+  </div>
+</footer>
+</body>
+</html>
